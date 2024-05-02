@@ -102,7 +102,7 @@ public class AOTVMacro extends Macro {
             return;
         }
 
-        int voidTool = PlayerUtils.getItemInHotbarWithBlackList(true, null, "Void");
+        int voidTool = PlayerUtils.getItemInHotbarWithBlackList(true, null, "End");
 
         if (voidTool == -1) {
             LogUtils.addMessage("AOTV Macro (Experimental) - You don't have a Aspect of the Void!");
@@ -425,7 +425,7 @@ public class AOTVMacro extends Macro {
 
 
                 KeyBinding.setKeyBindState(mc.gameSettings.keyBindSneak.getKeyCode(), true);
-                mc.thePlayer.inventory.currentItem = PlayerUtils.getItemInHotbarWithBlackList(true, null, "Void");
+                mc.thePlayer.inventory.currentItem = PlayerUtils.getItemInHotbarWithBlackList(true, null, "End");
 
                 if (!rotation.rotating)
                     rotation.initAngleLock(waypoint, MightyMiner.config.aotvCameraWaypointSpeed);
